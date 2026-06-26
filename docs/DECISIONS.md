@@ -14,3 +14,9 @@ brouillon. Évite l'essentiel des erreurs. Le pire cas reste un brouillon à jet
 ## [2026-06-26] Produit réutilisable, pas projet client unique
 Le dépôt est un **template Besmara**. Tahiti Déménage Tout est le premier client,
 pas la cible du dépôt. Une veille validée doit pouvoir nourrir plusieurs canaux.
+
+## [2026-06-26] Hygiène MCP : un projet = ses MCP, secrets en env
+Règle Besmara figée. Côté Claude Code : `.mcp.json` + `.claude/settings.json` ne
+chargent que le strict nécessaire (ici n8n), aucun serveur en scope user, secrets
+via `${VAR}` + `.env` gitignoré. Côté app desktop : connecteurs gérés à la main dans
+les réglages (non scopables par fichier). Voir PLAYBOOK.md › Hygiène MCP.
