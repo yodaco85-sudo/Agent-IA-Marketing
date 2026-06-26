@@ -24,3 +24,6 @@ __pycache__/
 exports/
 tmp/
 *.log
+
+# Claude settings perso (non partagé)
+.claude/settings.local.json

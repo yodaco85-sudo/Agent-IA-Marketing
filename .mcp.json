@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "n8n": {
+      "command": "python3",
+      "args": ["/home/yoda/n8n_MCP/n8n_mcp_server.py"],
+      "env": {
+        "N8N_API_URL": "${N8N_API_URL:-https://n8n.lilas.pro}",
+        "N8N_API_KEY": "${N8N_API_KEY}"
+      }
+    }
+  }
+}
